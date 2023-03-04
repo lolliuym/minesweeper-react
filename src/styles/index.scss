@@ -15,3 +15,8 @@
     border-top-color: #7b7b7b;
   }
 }
+
+@mixin widthNumber {
+  width: 28px;
+  height: 28px;
+}

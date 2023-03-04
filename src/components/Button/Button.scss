@@ -19,29 +19,53 @@
     margin-left: 2px;
     font-size: 12px;
   }
+  & .bomb {
+    @include widthNumber;
+    background: url("minesweeper-sprites.png") -155px -243px;
+  }
+  & .flagged {
+    @include widthNumber;
 
-  &.value-1 {
-    color: blue;
+    background: url("minesweeper-sprites.png") -62px -243px;
   }
-  &.value-2 {
-    color: green;
+  & .value-1 {
+    @include widthNumber;
+
+    background: url("minesweeper-sprites.png") -1px -274px;
   }
-  &.value-3 {
-    color: red;
+  & .value-2 {
+    @include widthNumber;
+
+    background: url("minesweeper-sprites.png") -31px -274px;
   }
-  &.value-4 {
-    color: blue;
+  & .value-3 {
+    @include widthNumber;
+
+    background: url("minesweeper-sprites.png") -62px -274px;
   }
-  &.value-5 {
-    color: green;
+  & .value-4 {
+    @include widthNumber;
+
+    background: url("minesweeper-sprites.png") -93px -274px;
   }
-  &.value-6 {
-    color: red;
+  & .value-5 {
+    @include widthNumber;
+
+    background: url("minesweeper-sprites.png") -124px -274px;
   }
-  &.value-7 {
-    color: green;
+  & .value-6 {
+    @include widthNumber;
+
+    background: url("minesweeper-sprites.png") -155px -274px;
   }
-  &.value-8 {
-    color: red;
+  & .value-7 {
+    @include widthNumber;
+
+    background: url("minesweeper-sprites.png") -185px -274px;
+  }
+  & .value-8 {
+    @include widthNumber;
+
+    background: url("minesweeper-sprites.png") -215px -274px;
   }
 }
