@@ -64,7 +64,7 @@ const App: React.FC = () => {
         setCells(currentCells);
         setBombCounter(bombCounter - 1);
       } else if (currentCell.state === CellState.flagged) {
-        currentCells[rowParam][colP aram].state = CellState.open;
+        currentCells[rowParam][colParam].state = CellState.open;
         setBombCounter(bombCounter + 1);
       }
     };
