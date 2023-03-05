@@ -14,6 +14,10 @@
     border-color: #7b7b7b;
     border-width: 1px;
   }
+  & .bomb-red {
+    @include widthNumber;
+    background: url("minesweeper-sprites.png") -185px  -243px;;
+  }
 
   span {
     margin-left: 2px;

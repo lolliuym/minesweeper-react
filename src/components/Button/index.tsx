@@ -7,14 +7,22 @@ interface ButtonProps {
   col: number;
   onClick(rowParam: number, colParam: number): (...args: any[]) => void;
   onContext(rowParam: number, colParam: number): (...args: any[]) => void;
+  red?: boolean;
   state: CellState;
   value: CellValue;
 }
 
-const Button: React.FC<ButtonProps> = ({ row, col,  onClick, onContext,  state, value }) => {
+const Button: React.FC<ButtonProps> = ({ row, col,  onClick, onContext, red,  state, value }) => {
   const renderContent = (): React.ReactNode => {
     if (state === CellState.visible) {
       if (value === CellValue.bomb) {
+        if (red) {
+          return (
+            <span role="img" aria-label="bomb">
+              <div className="bomb-red"></div>
+            </span>
+          )
+        }
         return (
           <span role="img" aria-label="bomb">
             <div className="bomb"></div>
@@ -31,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({ row, col,  onClick, onContext,  state, 
           <div className="flagged"></div>
         </span>
       );
-    }
+    }  
   };
 
   return (
